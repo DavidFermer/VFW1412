@@ -9,30 +9,27 @@ var previousFunction = function()
 	if (pieChoice >= 1)
 	{
 		pieChoice = pieChoice - 1;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
 	}
 	else
 	{
-		pieChoice = pieArray.length -1;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
+		pieChoice = pieArray.length;
 	}
+	console.log(pieChoice);
 };
 
 var nextFunction = function()
 {
-	if(pieChoice == pieArray.length - 1)
+	if(pieChoice <= pieArray.length - 2)
 	{
-		pieChoice = 0;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
+		pieChoice = pieChoice + 1;
 	}
 	else
 	{
-		pieChoice = pieChoice + 1;
-		pieArrayLabel.text = pieArray[pieChoice];
+		pieChoice = 0;
 	}
+	
+	console.log(pieChoice);
+	
 };
 
 //views

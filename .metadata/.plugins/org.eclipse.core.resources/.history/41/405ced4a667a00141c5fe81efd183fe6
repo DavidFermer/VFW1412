@@ -8,31 +8,17 @@ var previousFunction = function()
 {
 	if (pieChoice >= 1)
 	{
-		pieChoice = pieChoice - 1;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
+		pieChoice = piceChoice - 1;
 	}
 	else
 	{
-		pieChoice = pieArray.length -1;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
+		pieChoice = pieChoice.length;
 	}
 };
 
 var nextFunction = function()
 {
-	if(pieChoice == pieArray.length - 1)
-	{
-		pieChoice = 0;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
-	}
-	else
-	{
-		pieChoice = pieChoice + 1;
-		pieArrayLabel.text = pieArray[pieChoice];
-	}
+	
 };
 
 //views

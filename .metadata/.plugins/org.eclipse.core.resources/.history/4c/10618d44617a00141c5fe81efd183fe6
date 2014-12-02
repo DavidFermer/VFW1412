@@ -1,0 +1,59 @@
+
+//Variables
+var pieArray = ["Apple", "Pecan", "Pumpkin", "Cherry", "Rasberry"];
+
+//views
+var arrayView = Ti.UI.createView({
+	backgroundColor: "#eec81b",
+	borderRadius: 5,
+	left: 5,
+	right: 5,
+	top: 25,
+	height: 30
+});
+
+//buttons
+
+var nextButton = Ti.UI.createButton({
+	title: "Next",
+	color: "#000",
+	font: {fontSize: 10, fontFamily: "Helvetica"},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	backgroundColor: "#cd0000",
+	borderRadius: arrayView.borderRadius,
+	height: 75,
+	width: 75,
+	bottom: 15,
+	right: 15
+});
+
+
+var previousButton = Ti.UI.createButton({
+	title: "Previous",
+	color: nextButton.color,
+	font: {fontSize: 10, fontFamily: "Helvetica"},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	backgroundColor: "brown",
+	borderRadius: arrayView.borderRadius,
+	height: nextButton.height,
+	width: nextButton.width,
+	bottom: nextButton.bottom,
+	left: nextButton.right
+});
+
+// labels
+var arrayLabel = Ti.UI.createLabel({
+	text: pieArray[0],
+	left: 5,
+	Right: 5,
+	color: "#000",
+	font: {fontSize: 18, fontFamily: "Helvetica"},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+});
+
+// calls
+arrayView.add(arrayLabel);
+preiousButton.addEventListener('click', function(e) {alert('You clicked me!')});
+mainWindow.add(arrayView, nextButton, previousButton);
+
+

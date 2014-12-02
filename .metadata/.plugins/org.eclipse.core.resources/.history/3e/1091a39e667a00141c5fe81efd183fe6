@@ -6,33 +6,20 @@ pieChoice = 0;
 //Functions
 var previousFunction = function()
 {
-	if (pieChoice >= 1)
+	if (pieChoice === 0)
 	{
 		pieChoice = pieChoice - 1;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
 	}
 	else
 	{
-		pieChoice = pieArray.length -1;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
+		pieChoice = pieArray.length;
 	}
+	return console.log(pieChoice)
 };
 
 var nextFunction = function()
 {
-	if(pieChoice == pieArray.length - 1)
-	{
-		pieChoice = 0;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
-	}
-	else
-	{
-		pieChoice = pieChoice + 1;
-		pieArrayLabel.text = pieArray[pieChoice];
-	}
+	
 };
 
 //views

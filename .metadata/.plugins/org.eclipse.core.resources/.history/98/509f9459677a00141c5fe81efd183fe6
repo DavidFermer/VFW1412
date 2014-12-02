@@ -9,30 +9,17 @@ var previousFunction = function()
 	if (pieChoice >= 1)
 	{
 		pieChoice = pieChoice - 1;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
 	}
 	else
 	{
-		pieChoice = pieArray.length -1;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
+		pieChoice = pieArray.length;
 	}
+	return pieChoice;
 };
 
 var nextFunction = function()
 {
-	if(pieChoice == pieArray.length - 1)
-	{
-		pieChoice = 0;
-		
-		pieArrayLabel.text = pieArray[pieChoice];
-	}
-	else
-	{
-		pieChoice = pieChoice + 1;
-		pieArrayLabel.text = pieArray[pieChoice];
-	}
+	
 };
 
 //views
@@ -93,7 +80,7 @@ var pieArrayLabel = Ti.UI.createLabel({
 
 // calls
 titleView.add(titleLabel);
-previousButton.addEventListener("click", previousFunction);
+previousButton.addEventListener("click", pieChoice = previousFunction);
 nextButton.addEventListener("click", nextFunction);
 mainWindow.add(titleView, pieArrayLabel, nextButton, previousButton);
 
