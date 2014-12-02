@@ -1,0 +1,37 @@
+
+//windows
+
+var mainWindow = Ti.UI.createWindow({
+	title: "My Main Window",
+	backgroundColor: "fff"
+});
+
+//views
+var headerView = Ti.UI.createView({
+	backgroundColor: "orange",
+	left: 5,
+	right: 5,
+	top: 5,
+	height: 20
+});
+
+// var nextView = Ti.UI.createView({
+	// backgroundColor: "#C4884F",
+	// height: 30,
+	// width: 30,
+	// bottom: 5,
+	// right: 15
+// });
+
+
+// var previousView = Ti.UI.createView({
+	// backgroundColor: "Yellow",
+	// height: nextView.height,
+	// width: nextview.width,
+	// bottom: nextView.bottom,
+	// left: nextView.right
+// });
+
+//calls
+mainWindow.add(headerView);
+mainWindow.open();

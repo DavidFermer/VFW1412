@@ -1,0 +1,53 @@
+
+//windows
+
+var mainWindow = Ti.UI.createWindow({
+	title: "My Main Window",
+	backgroundColor: "orange"
+});
+
+//views
+var arrayView = Ti.UI.createView({
+	backgroundColor: "#eec81b",
+	borderRadius: 5,
+	left: 5,
+	right: 5,
+	top: 25,
+	height: 30
+});
+
+var nextView = Ti.UI.createView({
+	backgroundColor: "#cd0000",
+	borderRadius: arrayView.borderRadius,
+	height: 75,
+	width: 75,
+	bottom: 15,
+	right: 15
+});
+
+
+var previousView = Ti.UI.createView({
+	backgroundColor: "brown",
+	borderRadius: arrayView.borderRadius,
+	height: nextView.height,
+	width: nextView.width,
+	bottom: nextView.bottom,
+	left: nextView.right
+});
+
+// labels
+var arrayLabel = Ti.UI.createLabel({
+	text: arrayLabelText[0],
+	left: 5,
+	Right: 5,
+	color: "#fff",
+	font: {fontSize: 18, fontFamily: "Helvetica"},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+});
+
+//calls
+mainWindow.add(arrayView, nextView, previousView);
+var arrayLabelText = require("pieLogicAndBehavior.pieArray[0]");
+mainWindow.open();
+
+

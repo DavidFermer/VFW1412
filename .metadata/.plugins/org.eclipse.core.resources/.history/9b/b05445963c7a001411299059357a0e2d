@@ -1,0 +1,11 @@
+Titanium.UI.setBackgroundColor("yellow");
+
+var mainWindow = Titanium.UI.createWindow({
+	title: "my First Window",
+	backgroundColor: "white",
+	modal: true,
+	width: 300,
+	height: 400
+});
+
+mainWindow.open();

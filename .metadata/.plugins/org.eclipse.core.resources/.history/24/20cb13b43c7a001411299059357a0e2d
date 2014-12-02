@@ -1,0 +1,12 @@
+Titanium.UI.setBackgroundColor("yellow");
+
+var mainWindow = Titanium.UI.createWindow({
+	title: "my First Window",
+	backgroundColor: "white",
+	backgroundImage: "swirl_pattern.png",
+	modal: true,
+	width: 300,
+	height: 400
+});
+
+mainWindow.open();

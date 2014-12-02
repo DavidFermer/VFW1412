@@ -1,0 +1,5 @@
+Titanium.UI.setBackgroundColor("yellow");
+
+var mainWindow = Titanium.UI.createWindow({
+	title: "my First Window"
+});

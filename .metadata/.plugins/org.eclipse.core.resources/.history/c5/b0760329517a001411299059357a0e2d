@@ -1,0 +1,16 @@
+
+//windows
+
+var mainWindow = Ti.UI.createWindow({
+	title: "My Main Window",
+	backgroundColor: "black"
+});
+
+//views
+var HeaderView = Ti.UI.createView({
+	backgroundColor: "orange",
+	left: 5,
+	right: 5,
+	top: 5,
+	height: 20
+});

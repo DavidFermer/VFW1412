@@ -1,0 +1,60 @@
+dependencies: \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSProxy.m \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiBase.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiThreading.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiPublicAPI.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiEvaluator.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/KrollContext.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/headers/TiCore/TiCore.h \
+  headers/TiCore/Ti.h headers/TiCore/TiBase.h \
+  headers/TiCore/TiContextRef.h headers/TiCore/TiObjectRef.h \
+  headers/TiCore/TiValueRef.h headers/TiCore/WebKitAvailability.h \
+  headers/TiCore/TiStringRef.h headers/TiCore/TiStringRefCF.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/headers/TiCore/TiContextRefPrivate.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/KrollCallback.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/KrollObject.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSAdViewProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIViewProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiViewProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIView.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiAnimation.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiPoint.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiDimension.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiColor.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/ListenerEntry.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiModule.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUtils.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/WebFont.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiFile.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiBuffer.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiBlob.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/LayoutConstraint.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiGradient.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiRect.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiViewTemplate.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/Webcolor.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSTransitionAnimationProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSAttributedStringProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/Ti3DMatrix.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSCoverFlowViewProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSToolbarProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiToolbar.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSTabbedBarProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSDocumentViewerProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiUIiOSNavWindowProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiWindowProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiTab.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiTabGroup.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiViewController.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiControllerProtocols.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiAnimatorProxy.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiSnapBehavior.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiPushBehavior.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiGravityBehavior.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiAnchorAttachBehavior.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiViewAttachBehavior.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiCollisionBehavior.h \
+  /Users/davidfermer/Documents/VFW1412/Day2-Views/build/iphone/Classes/TiDynamicItemBehavior.h

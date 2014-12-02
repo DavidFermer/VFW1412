@@ -1,0 +1,65 @@
+Titanium.UI.setBackgroundColor("#fff");
+
+var mainWindow = Ti.UI.createWindow({
+	title: "my First Window",
+	backgroundColor: "#C44F67",
+	// backgroundImage: "swirl_pattern.png",
+	// backgroundRepeat: true
+});
+
+var headView = Ti.UI.createView({
+	backgroundColor: "#8CD9D2",
+	height: 50,
+	top: 20,
+	left: 5,
+	right: 5
+});
+
+var instructionsView = Ti.UI.createView({
+	backgroundColor: "#E0F2D9",
+	borderColor: "#8A432E",
+	borderWidth: 1,
+	borderRadius: 5,
+	height: 50,
+	top: headView.height + headView.top + 10,
+	left: 5,
+	right: 5
+});
+
+var dieA = Ti.UI.createView({
+	backgroundColor: "#214363",
+	borderRadius: 10,
+	width: 110,
+	height: 110,
+	top: instructionsView.top + instructionsView.hieght + 30,
+	left: 20
+});
+
+var dieB = Ti.UI.createView({
+	backgroundColor: "#2D8665",
+	borderRadius: 10,
+	width: 110,
+	height: 110,
+	top: instructionsView.top + instructionsView.hieght + 30,
+	right: 20
+});
+
+var resultsView = Ti.UI.createView({
+	top: dieB.top + dieB.height + 30,
+	borderColor: "#fff",
+	borderRadius: 5,
+	borderWidth: 1
+});
+
+var rollView = Ti.UI.createView({
+	backgroundColor: "#E2D8A7",
+	borderRadius: 10,
+	left: 5,
+	right: 5,
+	bottom: 5
+});
+
+mainWindow.add(headView);
+mainWindow.add(instructionsView);
+mainWindow.add(dieA, dieB, resultsView, rollView);
+mainWindow.open();

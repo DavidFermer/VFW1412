@@ -1,0 +1,8 @@
+Titanium.UI.setBackgroundColor("#C44F67");
+
+var mainWindow = Ti.UI.createWindow({
+	title: "my First Window",
+	backgroundColor: "#fff",
+	backgroundImage: "swirl_pattern.png",
+	backgroundRepeat: true
+});
