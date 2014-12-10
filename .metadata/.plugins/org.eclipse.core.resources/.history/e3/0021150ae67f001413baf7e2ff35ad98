@@ -1,0 +1,108 @@
+//Data Source
+var myData = require("characters");
+
+//Sounds - from http://www.soundboard.com/sb/R2D2_R2_D2_sounds
+var r2D2Sound = Ti.Media.createSound({url:"r2D2.mp3"});
+var backSoundR2D2 = Ti.Media.createSound({url:"backButtonR2D2.mp3"});
+
+//List Window
+var listWindow = Ti.UI.createWindow({
+	backgroundColor: "fff",
+	title:"List Window",
+	modal: true
+});
+
+//Table Nav
+
+var listNavWindow = Ti.UI.iOS.createNavigationWindow({
+	window: listWindow
+});
+
+//List View
+var listView = Ti.UI.createListView({
+	title: "List View",
+	top: 20
+});
+
+
+var getDetail = function() {
+	var detailWindow = Ti.UI.createWindow({
+			backgroundColor: "#F28705",
+			title: this.title,
+			modal: true
+	});
+	
+	var detailText = Ti.UI.createLabel({
+			text: this.desc,
+			font: {fontSize: 18, fontFamily: "Helvetica"}
+	});
+	detailWindow.add(detailText);
+	listNavWindow.openWindow(detailWindow, {animate: true});
+};
+
+//List Sections
+var sections = [];
+
+for (n in myData.myCharacters) {
+	
+	var listSection = Ti.UI.createListSection({
+			headerTitle: myData.myCharacters[n].name,
+			footerTitle: myData.myCharacters[n].description
+		});
+	var listSectionItem = [];
+	for (var i = 0, j = myData.myCharacters[n].weapons.length; i < j; i++){
+		listSectionItem.push({
+			properties: {
+				title: myData.myCharacters[n].weapons[i].title, 
+				desc:  myData.myCharacters[n].weapons[i].description,
+				accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DETAIL,
+				itemId: n + i
+			}
+		});
+		listSection.setItems(listSectionItem);
+	};
+	sections.push(listSection);
+};
+listView.addEventListener("itemclick", function(e) {
+	//alert("test");
+	console.log(e);
+	
+	var test = Ti.UI.createWindow({
+		title: this.title,
+		backgroundColor: "#555"
+	});
+	
+	var testLabel = Ti.UI.createLabel({
+		text: this.desc,
+	});
+	
+	test.add(testLabel);
+	listNavWindow.openWindow(test);
+	
+}); /*getDetail*/
+
+//Buttons
+var backButton = Ti.UI.createButton({ 
+	backgroundColor: "#0D0D0D",
+	bottom: 35,
+	width: 85,
+	borderRadius: 10,
+	title: "BACK"
+});
+
+//Event Listeners
+backButton.addEventListener("click", function(){
+	//listWindow.close();
+	listNavWindow.close();
+	backSoundR2D2.play();
+});
+
+listButton.addEventListener("click", function(){
+	//listWindow.open();
+	listNavWindow.open();
+	r2D2Sound.play();
+});
+
+listView.sections = sections;
+
+listWindow.add(listView, backButton);

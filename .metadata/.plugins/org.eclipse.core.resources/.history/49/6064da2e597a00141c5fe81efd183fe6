@@ -1,7 +1,0 @@
-
-
-//calls
-var test = require("pieLogicAndBehavors");
-mainWindow.open();
-
-

@@ -5,9 +5,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
-		<item value="array" key="selection"/>
+		<item value="test" key="selection"/>
 		<list key="findhistory">
-			<item value="array"/>
+			<item value="test"/>
+			<item value="List Window"/>
+			<item value="listSectionItem"/>
+			<item value="open"/>
+			<item value="listNavWindow"/>
+			<item value="listView"/>
+			<item value=".open"/>
+			<item value="view"/>
 		</list>
 	</section>
 </section>

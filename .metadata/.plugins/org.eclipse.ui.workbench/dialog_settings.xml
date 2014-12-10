@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item value="0" key="sort"/>
+		<item value="false" key="allPersp"/>
+		<list key="bounds">
+			<item value="141"/>
+			<item value="45"/>
+			<item value="623"/>
+			<item value="448"/>
+		</list>
+		<list key="columns">
+			<item value="199"/>
+			<item value="400"/>
+		</list>
+	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="1200" key="dialogWidth"/>
 		<item value="750" key="dialogHeight"/>
@@ -16,11 +30,23 @@
 		<item value="107" key="DIALOG_Y_ORIGIN"/>
 		<item value="302" key="DIALOG_X_ORIGIN"/>
 	</section>
+	<section name="EditorSelectionDialog">
+	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 		<item value="true" key="uncategorizedFilter"/>
 		<item value="true" key="internalFilter"/>
 		<item value="true" key="actionSetFilter"/>
 	</section>
 	<section name="ImportExportAction">
+		<item value="com.aptana.projects.internal.wizards.PromoteToProjectWizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="com.aptana.git.ui.clone.category"/>
+			<item value="org.eclipse.equinox.p2.category"/>
+			<item value="org.eclipse.debug.ui"/>
+			<item value="com.aptana.ui.wizards.import.category"/>
+			<item value="org.eclipse.team.ui.importWizards"/>
+			<item value="com.appcelerator.titanium.import.wizard.category"/>
+		</list>
 	</section>
 </section>

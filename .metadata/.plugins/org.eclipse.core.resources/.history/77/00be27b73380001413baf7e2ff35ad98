@@ -1,0 +1,6 @@
+//Sounds - from http://www.soundboard.com/sb/R2D2_R2_D2_sounds
+var r2D2Sound = Ti.Media.createSound({url:"r2D2.mp3"});
+var backSoundR2D2 = Ti.Media.createSound({url:"backButtonR2D2.mp3"});
+
+exports.myClickSound = r2D2Sound;
+exports.mybackSound = backSoundR2D2;

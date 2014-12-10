@@ -1,0 +1,34 @@
+var characters = {
+
+	lukeSkywalker:
+					{
+						name: "Luke Skywalker",
+						description: "A Jedi with mad skills",
+						weapons: [
+									{	title: 			"Lightsaber",
+									 	description:	"A hand to hand weapon that also provides defense from blaster bolts",
+									 	image:			"skywalkerLightSaber.jpg"
+									},
+									{	title:			"Blaster Pistol",
+										description:	"A Medium ranged gun that shoots blasts of energy",
+										image:			"skywalkerWithPistol.jpg"
+									}
+								  ]
+		  			},
+	hanSolo:
+					{
+						name: "Han Solo",
+						description: "He always shoots first",
+						weapons: 	[
+									  {	title:			"Blaster Rifle",
+									  	description:	"A Long Range gun that shoots blasts of energy"
+									  },
+									  {
+									  	title:			"Blaster Pistol",
+									  	description:	"A Medium ranged gun that shoots blasts of energy"
+									  }	
+									]
+					}
+};
+
+exports.myCharacters = characters;

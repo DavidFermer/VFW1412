@@ -1,0 +1,22 @@
+//Data Sources
+//var data = require("characters");
+
+var tableWindow = Ti.UI.createWindow({
+});
+
+//functions
+// var rowConstructor = function() {
+	// for(i = 0, j = /*data.characters.length;*/5, i < j; i++) {
+		// conole.log(i);
+	// };
+// 		
+// };
+
+//Table View
+var characterTable = Ti.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED
+});
+
+tableWindow.add(characterTable);
+ 
+//exports.tableWindow = table;
