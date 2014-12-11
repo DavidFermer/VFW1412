@@ -1,0 +1,125 @@
+//Data Source
+var myData = require("characters");
+
+//Sounds - from http://www.soundboard.com/sb/R2D2_R2_D2_sounds
+var r2D2Sound = Ti.Media.createSound({url:"r2D2.mp3"});
+var backSoundR2D2 = Ti.Media.createSound({url:"backButtonR2D2.mp3"});
+
+//List Window
+var listWindow = Ti.UI.createWindow({
+		backgroundColor: "fff",
+		title:"List",
+		modal: true
+});
+
+//Table Nav
+
+var listNavWindow = Ti.UI.iOS.createNavigationWindow({
+	window: listWindow
+});
+
+//List View
+var listView = Ti.UI.createListView({
+		title: "List",
+		top: 20
+});
+
+//List Sections
+var sections = [];
+
+for (n in myData.myCharacters) {
+	
+	var listSection = Ti.UI.createListSection({
+			headerTitle: myData.myCharacters[n].name,
+			footerTitle: myData.myCharacters[n].description
+		});
+	var listSectionItem = [];
+	for (var i = 0, j = myData.myCharacters[n].weapons.length; i < j; i++){
+		listSectionItem.push({
+			properties: {
+				title: myData.myCharacters[n].weapons[i].title,
+				desc: myData.myCharacters[n].weapons[i].description, 
+				accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DETAIL,
+				itemId: myData.myCharacters[n].name + myData.myCharacters[n].weapons[i].title,
+				image: myData.myCharacters[n].weapons[i].image,
+				mp3: myData.myCharacters[n].weapons[i].mp3
+			}
+		});
+		listSection.setItems(listSectionItem);
+	};
+	sections.push(listSection);
+};
+
+listView.sections = sections;
+
+//Row Caller
+listView.addEventListener("itemclick", function(e) {
+	var item = listSection.getItemAt(e.itemIndex);
+	console.log("this is the section index "+ e.sectionIndex)
+	console.log("this is the item index " + e.itemIndex);
+	console.log(item.properties.image);
+	
+	var detailWindow = Ti.UI.createWindow({
+			title: item.properties.title,
+			backgroundImage: item.properties.image
+	});
+	
+	var detailView = Ti.UI.createView({
+			backgroundColor:"fff",
+			bottom: 15,
+			height: 75,
+			width: "80%",
+			borderRadius: 10,
+			borderColor:"#F28705",
+			borderWidth: 5,
+	});
+	
+	var detailLabel = Ti.UI.createLabel({
+			text: item.properties.desc,
+			color: "red",
+			left: 10,
+			right: 10,
+			font: {fontSize: 14, fontWeight: "bold", fontFamily: "Helvitica"}
+	});
+	
+	var sound = Ti.Media.createSound({url:item.properties.mp3});
+	
+	detailWindow.addEventListener("postlayout", function()
+		{sound.play();});
+	
+	detailView.add(detailLabel);
+	detailWindow.add(detailView);
+	listNavWindow.openWindow(detailWindow);
+	
+	detailWindow.addEventListener("close", function(){
+		//sound.stop();
+	});
+});
+
+//Buttons
+var backButton = Ti.UI.createButton({ 
+		backgroundColor: "fff",
+		bottom: 35,
+		width: 85,
+		borderRadius: 10,
+		borderWidth: 5,
+		borderColor: "#F28705",
+		title: "BACK",
+		color: "red"
+});
+
+//Event Listeners
+backButton.addEventListener("click", function(){
+	listNavWindow.close();
+	r2D2Sound.stop();
+	backSoundR2D2.play();
+});
+
+listButton.addEventListener("click", function(){
+	listNavWindow.open();
+	openingSound.stop();
+	backSoundR2D2.stop();
+	r2D2Sound.play();
+});
+
+listWindow.add(listView, backButton);

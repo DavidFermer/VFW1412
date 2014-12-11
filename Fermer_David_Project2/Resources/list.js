@@ -37,12 +37,12 @@ for (n in myData.myCharacters) {
 	for (var i = 0, j = myData.myCharacters[n].weapons.length; i < j; i++){
 		listSectionItem.push({
 			properties: {
-				title: myData.myCharacters[n].weapons[i].title, 
+				title: myData.myCharacters[n].weapons[i].title,
+				desc: myData.myCharacters[n].weapons[i].description, 
 				accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DETAIL,
-				itemId: myData.myCharacters[n].weapons[i].title + "/" + 
-						myData.myCharacters[n].weapons[i].description + "/" + 
-						myData.myCharacters[n].weapons[i].image + "/" + 
-						myData.myCharacters[n].weapons[i].mp3
+				bindId: myData.myCharacters[n].name + myData.myCharacters[n].weapons[i].title,
+				image: myData.myCharacters[n].weapons[i].image,
+				mp3: myData.myCharacters[n].weapons[i].mp3
 			}
 		});
 		listSection.setItems(listSectionItem);
@@ -50,13 +50,22 @@ for (n in myData.myCharacters) {
 	sections.push(listSection);
 };
 
+listView.sections = sections;
+
 //Row Caller
 listView.addEventListener("itemclick", function(e) {
-	var item = e.itemId.split("/");
+	
+	var item;
+	
+		for( i in sections){
+		if (i == e.sectionIndex){
+			item = sections[i].getItemAt(e.itemIndex);
+		}
+	};
 	
 	var detailWindow = Ti.UI.createWindow({
-			title: item[0],
-			backgroundImage: item[2]
+			title: item.properties.title,
+			backgroundImage: item.properties.image
 	});
 	
 	var detailView = Ti.UI.createView({
@@ -70,24 +79,26 @@ listView.addEventListener("itemclick", function(e) {
 	});
 	
 	var detailLabel = Ti.UI.createLabel({
-			text: item[1],
+			text: item.properties.desc,
 			color: "red",
 			left: 10,
 			right: 10,
 			font: {fontSize: 14, fontWeight: "bold", fontFamily: "Helvitica"}
 	});
 	
-	var sound = Ti.Media.createSound({url:item[3]});
+	var sound = Ti.Media.createSound({url:item.properties.mp3});
 	
 	detailWindow.addEventListener("postlayout", function()
 		{sound.play();});
+	
+	
 	
 	detailView.add(detailLabel);
 	detailWindow.add(detailView);
 	listNavWindow.openWindow(detailWindow);
 	
 	detailWindow.addEventListener("close", function(){
-		sound.stop();
+		//sound.stop();
 	});
 });
 
@@ -116,7 +127,5 @@ listButton.addEventListener("click", function(){
 	backSoundR2D2.stop();
 	r2D2Sound.play();
 });
-
-listView.sections = sections;
 
 listWindow.add(listView, backButton);
