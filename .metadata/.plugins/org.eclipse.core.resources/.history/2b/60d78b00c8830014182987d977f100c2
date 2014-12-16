@@ -1,0 +1,54 @@
+var galleryNavWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+//Platform height and width
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+console.log("the platform width is " + pWidth);
+console.log("the platform height is " + pHeight);
+//The Images in the gallary
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
+console.log("this is the variable gallary " + gallery);
+var galleryList = gallery.getDirectoryListing();
+
+//Set up columns and rows
+var itemCount = galleryList.length;
+var rowCount = 4;
+var margin = 5;
+
+var trueCanvasWidth =pWidth - margin * (rowCount + 1);
+var size = trueCanvasWidth/rowCount;
+
+var viewScrolling = Ti.UI.createScrollView({
+	backgroundColor: "white",
+	layout: "horizontal",
+	width: pWidth,
+	top: 20,
+	contentWidth: pWidth,
+	height: pHeight - 20 - margin
+});
+
+//Add Pictures to VScrolling View
+for (var i = 0; i <itemCount; i++){
+	var view = Ti.UI.createView({
+		backgroundColor: "#33CCFF",
+		top: margin,
+		left: margin,
+		width: size,
+		height: size
+	});
+	
+	var theImage = Ti.UI.createImageView({
+	image: "images/" + galleryList[i],
+	top: 15
+	});
+	
+	view.add(theImage);
+	viewScrolling.add(view);
+	
+	view.addEventListener("click", function(){
+		alert("test");
+	});
+};
+
+mainWin.add(viewScrolling);

@@ -1,0 +1,92 @@
+//Platform height and width
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+
+//The Images in the gallary
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
+var galleryList = gallery.getDirectoryListing();
+
+//Set up columns and rows
+var itemCount = galleryList.length;
+var rowCount = 4;
+var margin = 5;
+
+var trueCanvasWidth =pWidth - margin * (rowCount + 1);
+var size = trueCanvasWidth/rowCount;
+
+var viewScrolling = Ti.UI.createScrollView({
+	backgroundColor: "black",
+	layout: "horizontal",
+	width: pWidth,
+	contentWidth: pWidth,
+	height: pHeight - 58 - margin
+});
+
+var galleryNavWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+
+//Add Pictures to VScrolling View
+
+//An Array of views
+var individualItems = [];
+var detailViews = [];
+
+for (var i = 0; i <itemCount; i++){
+		
+	
+	var view = Ti.UI.createView({
+		backgroundColor: "#white",
+		title: galleryList[i],
+		image: "images/" + galleryList[i],
+		indexOf: i,
+		top: margin,
+		left: margin,
+		width: size,
+		height: size
+	});
+	
+	var theImage = Ti.UI.createImageView({
+	image: "images/" + galleryList[i],
+	});
+	
+	var detailView = Ti.UI.createView({
+		backgroundColor: "red",
+		backgroundImage: view.image,
+		title: galleryList[i]
+	});
+	detailViews.push(detailView);
+
+	view.add(theImage);
+	individualItems.push(view);
+	viewScrolling.add(individualItems[i]);
+	
+	view.addEventListener("click", function(){
+	var detailWindow = Ti.UI.createWindow({
+			title: this.title,
+			modal: true
+	});	
+	
+	var scrollableView = Ti.UI.createScrollableView({
+		views: detailViews,
+		randomproperty: "test",
+		showPagingControl: true,
+	});
+	
+	scrollableView.addEventListener("scrollend", function(){
+		detailWindow.title = this.views[this.currentPage].title;	
+	});
+	
+	detailWindow.add(scrollableView);
+	
+	
+	if (i = this.indexOf){
+	scrollableView.setCurrentPage(i);
+	}
+	galleryNavWindow.openWindow(detailWindow, {animate: true});
+
+	});	
+};
+
+mainWin.add(viewScrolling);
+galleryNavWindow.open();

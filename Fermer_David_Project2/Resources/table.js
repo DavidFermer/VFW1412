@@ -42,6 +42,7 @@ var getDetail = function() {
 	});
 	detailWindow.addEventListener("postlayout", function()
 	{sound.play();});
+	
 	detailView.add(detailText);
 	detailWindow.add(detailView);
 	tableNavWindow.openWindow(detailWindow, {animate: true});

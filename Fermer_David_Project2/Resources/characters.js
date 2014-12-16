@@ -1,5 +1,3 @@
-//Note do not use the / in any part of the the qouted items
-
 var characters = {
 
 	lukeSkywalker:

@@ -1438,3 +1438,998 @@ java.lang.NullPointerException
 	at com.appcelerator.titanium.android.core.AndroidSDKLocator.access$0(AndroidSDKLocator.java:217)
 	at com.appcelerator.titanium.android.core.AndroidSDKLocator$1.run(AndroidSDKLocator.java:237)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-12-11 16:19:30.772 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/davidfermer/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/davidfermer/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-11 16:19:34.350
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-12-11 16:19:34.450
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 16:19:34.450
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 16:19:34.450
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-11 21:43:57.962
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-12-13 19:59:47.732 -----------------------------------------------
+eclipse.buildId=3.6.0.201407100658
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/davidfermer/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/davidfermer/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-13 20:00:15.353
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui.workbench 4 2 2014-12-13 20:00:18.448
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.rcp.IDEWorkbenchWindowAdvisor$3.perspectiveActivated(IDEWorkbenchWindowAdvisor.java:342)
+	at org.eclipse.ui.internal.PerspectiveListenerList$1.run(PerspectiveListenerList.java:74)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:854)
+	at org.eclipse.ui.internal.PerspectiveListenerList.fireEvent(PerspectiveListenerList.java:58)
+	at org.eclipse.ui.internal.PerspectiveListenerList.firePerspectiveActivated(PerspectiveListenerList.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.firePerspectiveActivated(WorkbenchWindow.java:1369)
+	at org.eclipse.ui.internal.WorkbenchPage$4.handleEvent(WorkbenchPage.java:2870)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4650)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:135)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.switchPerspective(PartServiceImpl.java:491)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:96)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:649)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:62)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:62)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:581)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1042)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.912
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@1e7ed0c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@17be525)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.913
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@85d11e)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@164227b)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.914
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@1959fc)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@62e5cf)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.914
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@36220d)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@1f58396)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.914
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@6e6cb7)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@1a38680)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.915
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@e71220)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@570aee)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.915
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@e584ab)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@690d94)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.916
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@109fa8b)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@1fe01c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.916
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@3d9f31)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@19e7c5a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.916
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@464aa5)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@cec2e3)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.917
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@142dc7d)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@99b50a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.973
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a4f080)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a99304)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.973
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.move: {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1533c04)} vs {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1893cba)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.973
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@1e7ed0c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@17be525)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.974
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@85d11e)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@164227b)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.974
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@1959fc)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@62e5cf)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.975
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@36220d)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@1f58396)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.975
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@6e6cb7)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@1a38680)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.975
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@e71220)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@570aee)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.976
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@e584ab)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@690d94)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.976
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@109fa8b)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@1fe01c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.976
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@3d9f31)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@19e7c5a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.977
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@cec2e3)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@464aa5)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:00:19.977
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@99b50a)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@142dc7d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.412
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.copy: {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@14436cd)} vs {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@16a00ab)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.413
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.paste: {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@100f182)} vs {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@efba6d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.413
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a4f080)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a99304)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.413
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.move: {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1893cba)} vs {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1533c04)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.414
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@17be525)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@1e7ed0c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.414
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@85d11e)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@164227b)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.414
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@1959fc)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@62e5cf)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.414
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@36220d)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@1f58396)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.415
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@1a38680)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@6e6cb7)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.415
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@570aee)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@e71220)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.415
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@e584ab)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@690d94)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.416
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@109fa8b)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@1fe01c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.416
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@19e7c5a)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@3d9f31)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.416
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@464aa5)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@cec2e3)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.416
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@99b50a)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@142dc7d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.882
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.copy: {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@16a00ab)} vs {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@14436cd)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.882
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.paste: {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@100f182)} vs {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@efba6d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.883
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a99304)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a4f080)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.883
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.move: {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1893cba)} vs {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1533c04)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.883
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@17be525)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@1e7ed0c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.883
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@164227b)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@85d11e)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.884
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@1959fc)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@62e5cf)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.884
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@36220d)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@1f58396)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.884
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@6e6cb7)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@1a38680)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.885
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@e71220)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@570aee)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.885
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@e584ab)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@690d94)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.885
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@109fa8b)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@1fe01c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@3d9f31)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@19e7c5a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@464aa5)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@cec2e3)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.886
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@99b50a)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@142dc7d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.939
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.copy: {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@16a00ab)} vs {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@14436cd)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.940
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.paste: {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@100f182)} vs {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@efba6d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.940
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a99304)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a4f080)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.940
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.move: {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1893cba)} vs {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1533c04)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.941
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@17be525)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@1e7ed0c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.941
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@164227b)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@85d11e)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.941
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@1959fc)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@62e5cf)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.941
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@36220d)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@1f58396)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.942
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@1a38680)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@6e6cb7)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.942
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@570aee)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@e71220)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.942
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@e584ab)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@690d94)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.943
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@1fe01c)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@109fa8b)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.943
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@3d9f31)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@19e7c5a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.943
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@464aa5)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@cec2e3)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:15.944
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@99b50a)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@142dc7d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.642
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.copy: {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@16a00ab)} vs {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@14436cd)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.643
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.paste: {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@100f182)} vs {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@efba6d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.643
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a99304)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@a4f080)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.644
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.move: {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1893cba)} vs {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1533c04)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.644
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@17be525)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@1e7ed0c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.644
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@164227b)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@85d11e)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.644
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@1959fc)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@62e5cf)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.645
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@36220d)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@1f58396)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.645
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@6e6cb7)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@1a38680)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.645
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@570aee)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@e71220)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.646
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@e584ab)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@690d94)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.646
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@1fe01c)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@109fa8b)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.646
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@3d9f31)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@19e7c5a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.647
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@cec2e3)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@464aa5)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 20:17:16.647
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@99b50a)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@142dc7d)}
+!SESSION 2014-12-14 09:09:39.383 -----------------------------------------------
+eclipse.buildId=3.6.0.201407100658
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/davidfermer/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/davidfermer/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-14 09:09:43.816
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui.workbench 4 2 2014-12-14 09:09:47.091
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.rcp.IDEWorkbenchWindowAdvisor$3.perspectiveActivated(IDEWorkbenchWindowAdvisor.java:342)
+	at org.eclipse.ui.internal.PerspectiveListenerList$1.run(PerspectiveListenerList.java:74)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:854)
+	at org.eclipse.ui.internal.PerspectiveListenerList.fireEvent(PerspectiveListenerList.java:58)
+	at org.eclipse.ui.internal.PerspectiveListenerList.firePerspectiveActivated(PerspectiveListenerList.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.firePerspectiveActivated(WorkbenchWindow.java:1369)
+	at org.eclipse.ui.internal.WorkbenchPage$4.handleEvent(WorkbenchPage.java:2870)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4650)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:135)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.switchPerspective(PartServiceImpl.java:491)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:124)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:96)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:649)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:62)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:62)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:581)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1042)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.480
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.copy: {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@113531c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@1b56020)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.480
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.paste: {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@2a4c26)} vs {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@ed841c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.481
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@1eb620c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@7206ea)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.482
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.move: {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1b0d8fc)} vs {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@17599ab)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.482
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@16340d6)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@135e1e9)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.483
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@1c98168)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@4ee740)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.483
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@b40c16)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@85a1be)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.484
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@188245d)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@10b7f7c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.484
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@e5b5a3)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@f7f655)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.484
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@13b0b13)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@1544ca0)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.485
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@fb68b3)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@196fabe)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.485
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@4dd5b6)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@9a1ef)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.486
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@f91b6c)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@776fc0)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.486
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@177746a)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@17c0e2a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.486
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@1f578dd)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@d22976)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.873
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@1eb620c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@7206ea)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.881
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@177746a)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@17c0e2a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.882
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@177746a)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@17c0e2a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.882
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@1f578dd)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@d22976)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:54.882
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@1f578dd)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@d22976)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.223
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.copy: {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@113531c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@1b56020)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.224
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.paste: {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@2a4c26)} vs {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@ed841c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.224
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@1eb620c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@7206ea)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.225
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.move: {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1b0d8fc)} vs {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@17599ab)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.225
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@16340d6)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@135e1e9)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.225
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@4ee740)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@1c98168)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.226
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@b40c16)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@85a1be)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.226
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@188245d)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@10b7f7c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.226
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@f7f655)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@e5b5a3)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.227
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@13b0b13)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@1544ca0)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.227
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@fb68b3)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@196fabe)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.227
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@4dd5b6)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@9a1ef)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@f91b6c)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@776fc0)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@17c0e2a)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@177746a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.228
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@d22976)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@1f578dd)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.521
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.copy: {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@1b56020)} vs {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@113531c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.521
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.paste: {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@ed841c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@2a4c26)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.522
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@7206ea)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@1eb620c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.523
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.move: {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1b0d8fc)} vs {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@17599ab)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.523
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@135e1e9)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@16340d6)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.523
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@4ee740)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@1c98168)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.524
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@b40c16)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@85a1be)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.524
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@10b7f7c)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@188245d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.524
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@f7f655)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@e5b5a3)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.525
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@13b0b13)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@1544ca0)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.525
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@fb68b3)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@196fabe)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.526
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@9a1ef)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@4dd5b6)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.526
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@776fc0)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@f91b6c)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.526
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@177746a)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@17c0e2a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:55.527
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@d22976)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@1f578dd)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.621
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.copy: {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@113531c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyCopyResourceAction@1b56020)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.621
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.paste: {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@ed841c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyPasteAction@2a4c26)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.622
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.delete: {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@1eb620c)} vs {ActionHandler(org.python.pydev.navigator.actions.PyDeleteResourceAction@7206ea)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.622
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.move: {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@1b0d8fc)} vs {ActionHandler(org.python.pydev.navigator.actions.PyMoveResourceAction@17599ab)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.623
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.rename: {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@135e1e9)} vs {ActionHandler(org.python.pydev.navigator.actions.PyRenameResourceAction@16340d6)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.623
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.goToResource: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@4ee740)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.GotoResourceAction@1c98168)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.624
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.properties: {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@b40c16)} vs {ActionHandler(org.eclipse.ui.dialogs.PropertyDialogAction@85a1be)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.624
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addBookmark: {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@10b7f7c)} vs {ActionHandler(org.eclipse.ui.actions.AddBookmarkAction@188245d)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.624
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.addTask: {ActionHandler(org.eclipse.ui.actions.AddTaskAction@f7f655)} vs {ActionHandler(org.eclipse.ui.actions.AddTaskAction@e5b5a3)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.625
+!MESSAGE Conflicting handlers for org.eclipse.ui.file.refresh: {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@13b0b13)} vs {ActionHandler(org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider$2@1544ca0)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.625
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.buildProject: {ActionHandler(org.eclipse.ui.actions.BuildAction@196fabe)} vs {ActionHandler(org.eclipse.ui.actions.BuildAction@fb68b3)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.626
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.openProject: {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@9a1ef)} vs {ActionHandler(org.eclipse.ui.actions.OpenResourceAction@4dd5b6)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.626
+!MESSAGE Conflicting handlers for org.eclipse.ui.project.closeProject: {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@f91b6c)} vs {ActionHandler(org.eclipse.ui.actions.CloseResourceAction@776fc0)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.626
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.undo: {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@17c0e2a)} vs {ActionHandler(org.eclipse.ui.operations.UndoActionHandler@177746a)}
+
+!ENTRY org.eclipse.ui 4 4 2014-12-14 09:09:56.627
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.redo: {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@d22976)} vs {ActionHandler(org.eclipse.ui.operations.RedoActionHandler@1f578dd)}
+!SESSION 2014-12-14 13:02:18.495 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/davidfermer/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/davidfermer/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-14 13:02:30.041
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-12-14 13:02:30.142
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-14 13:02:30.142
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-14 13:02:30.142
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.aptana.git.core 4 1 2014-12-14 14:15:12.515
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2014-12-14 14:15:12.515
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.processException(ProcessBuilder.java:478)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:457)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1575)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1538)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1533)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:53)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:91)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:452)
+	... 17 more
+!SUBENTRY 1 com.aptana.core 4 0 2014-12-14 14:15:12.519
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.processException(ProcessBuilder.java:478)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:457)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1575)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1538)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1533)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:53)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:91)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:452)
+	... 17 more
+!SUBENTRY 1 com.aptana.core 4 0 2014-12-14 14:15:12.521
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.processException(ProcessBuilder.java:478)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:457)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1575)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1538)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1533)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:53)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:91)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:452)
+	... 17 more
+!SESSION 2014-12-15 17:27:19.761 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/davidfermer/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/davidfermer/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-12-15 17:27:25.101
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-15 17:27:25.749
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-12-15 17:27:25.922
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-15 17:27:25.922
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-15 17:27:25.922
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-15 18:27:10.179
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-12-15 18:30:41.540 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/davidfermer/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/davidfermer/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-15 18:30:45.341
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-12-15 18:30:45.429
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-15 18:30:45.429
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-15 18:30:45.429
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-15 20:54:48.991
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:234)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-12-16 08:40:21.611 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/davidfermer/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/davidfermer/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-16 08:40:25.823
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-12-16 08:40:25.940
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-16 08:40:25.940
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-16 08:40:25.940
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-16 09:00:22.211
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-12-16 09:05:55.579 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/davidfermer/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/davidfermer/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-16 09:05:58.958
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-12-16 09:05:59.045
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-16 09:05:59.045
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-16 09:05:59.045
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-16 09:26:41.337
+!MESSAGE An internal error occurred during: "Update Android info".
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.core.internal.cli.NodeTitaniumCLI.getUserManager(NodeTitaniumCLI.java:391)
+	at com.appcelerator.titanium.core.internal.cli.NodeTitaniumCLI.run(NodeTitaniumCLI.java:190)
+	at com.appcelerator.titanium.core.internal.cli.NodeTitaniumCLI.run(NodeTitaniumCLI.java:324)
+	at com.appcelerator.titanium.core.internal.cli.NodeTitaniumCLI.runCommand(NodeTitaniumCLI.java:146)
+	at com.appcelerator.titanium.core.internal.cli.NodeTitaniumCLI.runCommandWithNoLogin(NodeTitaniumCLI.java:349)
+	at com.appcelerator.titanium.core.internal.cli.NodeTitaniumCLI.info(NodeTitaniumCLI.java:633)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.loadTiInfo(AndroidSDKLocator.java:821)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.updateTiInfo(AndroidSDKLocator.java:219)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator.access$0(AndroidSDKLocator.java:217)
+	at com.appcelerator.titanium.android.core.AndroidSDKLocator$1.run(AndroidSDKLocator.java:237)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-16 09:26:43.105
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-12-16 13:12:49.711 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/davidfermer/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/davidfermer/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-16 13:12:57.012
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-12-16 13:12:57.121
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-16 13:12:57.121
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-16 13:12:57.121
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.aptana.git.core 4 1 2014-12-16 17:09:54.535
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 0 2014-12-16 17:09:54.535
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.processException(ProcessBuilder.java:478)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:457)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1575)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1538)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1533)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:995)
+	at com.aptana.git.core.model.GitIndex$UnstagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:53)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:91)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:452)
+	... 17 more
+!SUBENTRY 1 com.aptana.core 4 0 2014-12-16 17:09:54.536
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.processException(ProcessBuilder.java:478)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:457)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1575)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1538)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1533)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1030)
+	at com.aptana.git.core.model.GitIndex$UntrackedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:53)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:91)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:452)
+	... 17 more
+!SUBENTRY 1 com.aptana.core 4 0 2014-12-16 17:09:54.536
+!MESSAGE Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+!STACK 0
+java.io.IOException: Cannot run program "/usr/bin/git" (in directory "/Users/davidfermer/Documents/VFW1412"): error=7, Argument list too long
+	at java.lang.ProcessBuilder.processException(ProcessBuilder.java:478)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:457)
+	at com.aptana.core.util.ProcessRunner.startProcess(ProcessRunner.java:165)
+	at com.aptana.core.util.ProcessRunner.doRun(ProcessRunner.java:146)
+	at com.aptana.core.util.ProcessRunner.run(ProcessRunner.java:85)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:279)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:254)
+	at com.aptana.core.util.ProcessRunner.runInBackground(ProcessRunner.java:248)
+	at com.aptana.git.core.model.GitExecutable.runInBackground(GitExecutable.java:362)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1575)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1538)
+	at com.aptana.git.core.model.GitRepository.execute(GitRepository.java:1533)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:954)
+	at com.aptana.git.core.model.GitIndex$StagedFilesRefreshJob.call(GitIndex.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: java.io.IOException: error=7, Argument list too long
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:53)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:91)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:452)
+	... 17 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-16 17:12:31.720
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

@@ -97,9 +97,9 @@ listView.addEventListener("itemclick", function(e) {
 	detailWindow.add(detailView);
 	listNavWindow.openWindow(detailWindow);
 	
-	detailWindow.addEventListener("close", function(){
+	// detailWindow.addEventListener("close", function(){
 		//sound.stop();
-	});
+	// });
 });
 
 //Buttons

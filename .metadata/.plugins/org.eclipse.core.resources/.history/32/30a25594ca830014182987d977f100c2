@@ -1,0 +1,72 @@
+var galleryNavWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+//Platform height and width
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+
+//The Images in the gallary
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
+var galleryList = gallery.getDirectoryListing();
+
+//Set up columns and rows
+var itemCount = galleryList.length;
+var rowCount = 4;
+var margin = 5;
+
+var trueCanvasWidth =pWidth - margin * (rowCount + 1);
+var size = trueCanvasWidth/rowCount;
+
+var viewScrolling = Ti.UI.createScrollView({
+	backgroundColor: "white",
+	layout: "horizontal",
+	width: pWidth,
+	top: 20,
+	contentWidth: pWidth,
+	height: pHeight - 20 - margin
+});
+
+//Add Pictures to VScrolling View
+for (var i = 0; i <itemCount; i++){
+	
+		
+	var detailWindow = Ti.UI.createWindow({
+			title: "Need to add JSON for title",
+			backgroundColor: "blue"
+	});	
+	
+	var detailView = Ti.UI.createView({
+			backgroundColor: "red"
+	});
+	
+	var detailText = Ti.UI.createLabel({
+			text: "Text will go here, it will be pulled from JSON data"
+	});
+	
+	var view = Ti.UI.createView({
+		backgroundColor: "#33CCFF",
+		top: margin,
+		left: margin,
+		width: size,
+		height: size
+	});
+	
+	var theImage = Ti.UI.createImageView({
+	image: "images/" + galleryList[i],
+	top: 15
+	});
+
+	
+	view.add(theImage);
+	viewScrolling.add(view);
+	
+	view.addEventListener("click", function(){
+		detailView.add(detailText);
+		detailWindow.add(detailView);
+	var galleryNavWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin	});
+		
+	});
+};
+
+mainWin.add(viewScrolling);

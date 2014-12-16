@@ -1,3 +1,3 @@
-FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Thu Dec 11 15\:07\:21 EST 2014\n9\=listSectionItem\n8\=List Window\n7\=test\n6\=navWindow\n14\=view\n5\=tableNavWindow.open();\n13\=.open\n4\=getDetail\n12\=listView\n3\=characterTable\n11\=listNavWindow\n2\=sections\n10\=open\n1\=tableWindow\n0\=tableView\n
+FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Tue Dec 16 16\:18\:14 EST 2014\n9\=test\n8\=navWindow\n7\=tableNavWindow.open();\n6\=getDetail\n5\=characterTable\n4\=sections\n3\=tableWindow\n2\=tableView\n1\=viewScrolling\n0\=scrollableView\n
 FIND_BAR_DECORATOR_REPLACE_ENTRIES=\#\n\#Sat Dec 06 21\:25\:29 EST 2014\n1\=title\n0\=characterTableSections\n
 eclipse.preferences.version=1
