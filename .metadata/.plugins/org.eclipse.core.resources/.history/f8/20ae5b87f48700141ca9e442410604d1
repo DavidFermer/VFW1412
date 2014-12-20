@@ -1,0 +1,11 @@
+var mainWin = Ti.UI.createWindow({
+	backgroundImage: "mainImages/background.jpg"
+});
+
+var logo = Ti.UI.createImageView({
+	image:"mainImages/logo.png",
+	top: 5,
+});
+
+mainWin.add(logo);
+mainWin.open();

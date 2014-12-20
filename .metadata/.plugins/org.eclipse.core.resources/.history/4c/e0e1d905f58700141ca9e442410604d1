@@ -1,0 +1,18 @@
+var mainWin = Ti.UI.createWindow({
+	backgroundImage: "mainImages/background.jpg"
+});
+
+var logo = Ti.UI.createImageView({
+	image:"mainImages/logo.png",
+	top: 5,
+});
+
+var castButton = Ti.UI.createImageView({
+	image: "mainImages/castButton.png",
+	top: logo.top + logo.height + 20,
+	width: 450/2,
+	height: 55
+});
+
+mainWin.add(logo, castButton);
+mainWin.open();

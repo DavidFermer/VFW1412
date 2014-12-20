@@ -1,0 +1,8 @@
+var cast = Ti.UI.createWindow({});
+
+var castTableView = Ti.UI.createTableView({});
+
+var tableSections = [];
+
+cast.open();
+

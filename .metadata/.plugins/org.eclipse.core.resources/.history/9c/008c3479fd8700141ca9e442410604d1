@@ -1,0 +1,11 @@
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+
+var cast = Ti.UI.createWindow({});
+
+var castTableView = Ti.UI.createTableView({});
+
+var tableSections = [];
+
+navWindow.open();

@@ -1,0 +1,55 @@
+var mainWin = Ti.UI.createWindow({
+	backgroundImage: "mainImages/background.jpg"
+});
+
+var logo = Ti.UI.createView({
+	backgroundImage:"mainImages/logo.png",
+	top: 5,
+	width: 556/2,
+	height: 325/2
+	
+});
+
+var castButton = Ti.UI.createButton({
+	backgroundImage: "mainImages/castButton.png",
+	top: logo.top + logo.height + 20,
+	width: 225,
+	height: 55
+});
+
+castButton.addEventListener("click", function(){
+	console.log("the cast button click listener is working");
+});
+
+var galButton = Ti.UI.createButton({
+	backgroundImage: "mainIMages/galButton.png",
+	top: castButton.top + castButton.height + 20,
+	width: castButton.width,
+	height: castButton.height
+});
+
+galButton.addEventListener("click", function(){
+	console.log("the gal button click listener is working");
+});
+
+var trailButton = Ti.UI.createButton({
+	backgroundImage: "mainImages/trailButton.png",
+	top: galButton.top + galButton.height +20,
+	width: castButton.width,
+	height: castButton.height
+});
+
+trailButton.addEventListener("click", function(){
+	console.log("the trail button click listener is working");
+});
+
+var myLabel = Ti.UI.createLabel({
+	text: "VFW 1412 David Fermer",
+	Color: "red",
+	font: {fontFamily: "helvitica", fontWeight: "bold", fontSize: 28},
+	bottom: 5,
+	right: 5,
+});
+
+mainWin.add(logo, castButton, galButton, trailButton, myLabel);
+mainWin.open();

@@ -1,0 +1,13 @@
+var theCast = Ti.UI.createWindow({});
+
+var castTableView = Ti.UI.createTableView({});
+
+var tableSections = [];
+
+console.log("this file is being called");
+castButton.addEventListener("click", function(){
+	//navWindow.open(cast, {animate: true});
+	cast.open();
+});
+
+

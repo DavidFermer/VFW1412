@@ -1,0 +1,38 @@
+var data = require("json");
+
+var theCast = Ti.UI.createWindow({});
+
+var castTableView = Ti.UI.createTableView({});
+
+var tableSections = [];
+
+for (i in data.myCast){
+	var tableSection = Ti.UI.createTableViewSection({
+		headerTitle: data.myCast[i].header,
+		footerTitle: data.myCast[i].footer
+	});
+	
+	for (var n = 0, j = data.myCast[i].castMembers.length; i < j; i++){
+		var theRow = Ti.UI.createTableViewRow({
+			title: data.myCast[i].castMembers[n].name,
+			desc: data.myCast[i].castMembers[n].character,
+			image: data.myCast[i].castMembers[n].image,
+			hasChild: true
+		});
+		theRow.addEventListener("click", function(){
+			console.log("the row event listener " + i + " " + n + "has fired");
+		});
+		tablesection.add(theRow);
+	}
+	tableSections.push(tableSection);
+};
+
+characterTable.setData(tableSections);
+
+console.log("this file is being called");
+castButton.addEventListener("click", function(){
+	//navWindow.open(cast, {animate: true});
+	navWindow.openWindow(theCast, {animate: true});
+});
+
+
