@@ -1,0 +1,55 @@
+//Variables
+//Platform height and width
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+
+//The Images in the gallary
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "gallImages");
+var galleryList = gallery.getDirectoryListing();
+
+//Set up columns and rows
+var itemCount = galleryList.length;
+var rowCount = 1;
+var margin = 5;
+
+var trueCanvasWidth =pWidth - margin * (rowCount + 1);
+var size = trueCanvasWidth/rowCount;
+
+var gallWindow = Ti.UI.createWindow({});
+
+
+var viewScrolling = Ti.UI.createScrollView({
+	backgroundColor: "black",
+	layout: "vertical",
+	width: pWidth,
+	contentWidth: pWidth,
+	height: pHeight - 58 - margin
+});
+//main code
+var views = [];
+
+for (i in itemCount){
+	console.log(i);
+	var view = Ti.UI.createImageView({
+		title: galleryList[i],
+		image: "gallImages/" + galleryList[i],
+		indexOf: i,
+		top: margin,
+		left: margin,
+		width: size,
+		height: 565,
+		border: 2,
+		borderColor: "red"
+	});
+	views.push(view);
+};
+
+viewScrolling.add(views);
+gallWindow.add(viewScrolling);
+
+
+
+//Event Listener on main page that links to this page
+galButton.addEventListener("click", function(){
+	navWindow.openWindow(gallWindow, {animate: true});
+});

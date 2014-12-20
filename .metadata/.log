@@ -2821,3 +2821,11 @@ java.io.FileNotFoundException: /Users/davidfermer/Documents/VFW1412/.metadata/.p
 !MESSAGE Save operation warnings.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2014-12-19 21:13:33.755
 !MESSAGE The project description file (.project) for 'Fermer_David_Project_3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY com.aptana.git.core 4 0 2014-12-20 02:55:09.683
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Unable to run update-index: 
+
+!ENTRY com.aptana.git.core 4 1 2014-12-20 02:55:09.684
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 128 2014-12-20 02:55:09.684
+!MESSAGE 

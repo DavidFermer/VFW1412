@@ -1,0 +1,69 @@
+//Variables
+//Platform height and width
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight - 58;
+console.log(pWidth);
+console.log(pHeight);
+
+//The Images in the gallary
+var gallery = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "galleryImages");
+var galleryList = gallery.getDirectoryListing();
+
+//Set up columns and rows
+var itemCount = galleryList.length;
+var rowCount = 1;
+var margin = 5;
+
+var trueCanvasWidth = pWidth - margin * (rowCount + 1);
+var size = trueCanvasWidth/rowCount;
+
+var gallWindow = Ti.UI.createWindow({});
+
+
+var viewScrolling = Ti.UI.createScrollView({
+	backgroundColor: "black",
+	layout: "vertical",
+	top: 35,
+	width: pWidth,
+	contentWidth: pWidth,
+	height: pHeight - margin - 35
+});
+//functions
+var getFullView = function(e){
+	var fullViewWindow = Ti.UI.createWindow({
+		title: e.source.title
+	});
+	navWindow.openWindow(fullViewWIndow,{animate:true});
+};
+
+//main code
+var views = [];
+
+for (i = 0; i < itemCount; i++){
+	console.log(i);
+	var view = Ti.UI.createImageView({
+		title: galleryList[i],
+		image: "galleryImages/" + galleryList[i],
+		indexOf: i,
+		top: margin,
+		left: margin,
+		width: size,
+		height: viewScrolling.height - margin,
+		border: 2,
+		borderColor: "red"
+	});
+	view.addEventListener("click", function(e){
+		getFullView(e);
+	});
+	views.push(view);
+};
+
+viewScrolling.add(views);
+gallWindow.add(viewScrolling);
+
+
+
+//Event Listener on main page that links to this page
+galButton.addEventListener("click", function(){
+	navWindow.openWindow(gallWindow, {animate: true});
+});
